@@ -50,7 +50,7 @@ void sel_000_hook()
 void SchoolOrder()
 {
 	begin:
-	SET_SEL_CHOICE_KEYBIND(14, 3);
+	SET_SEL_CHOICE_KEYBIND(6, 3);
 	int school = ADV_SEL( School_Text, School, 0 );
 	if (school > 1) 
 	{
@@ -60,7 +60,7 @@ void SchoolOrder()
 	switch (school)
 	{
 		case 0:
-			SET_SEL_CHOICE_KEYBIND(14, 4);
+			SET_SEL_CHOICE_KEYBIND(6, 4);
 			int classroom = ADV_SEL( School_Text, ClassroomBuilding, 0 );
 			if (classroom < 4) 
 			{
@@ -86,7 +86,7 @@ void SchoolOrder()
 			}
 			break;
 		case 1:
-			SET_SEL_CHOICE_KEYBIND(14, 2);
+			SET_SEL_CHOICE_KEYBIND(6, 2);
 			int practice = ADV_SEL( School_Text, PracticeBuilding, 0 );
 			if (practice < 2) 
 			{
@@ -136,7 +136,7 @@ void sel_001_hook()
 
 void StreetOrder()
 {
-	SET_SEL_CHOICE_KEYBIND(14, 6);
+	SET_SEL_CHOICE_KEYBIND(6, 6);
 	int street = ADV_SEL( Street_Text, ShoppingDistrictDay, 0 );
 	FADE( 2, 5 );
 	FADE_SYNC();
@@ -189,7 +189,7 @@ void sel_003_hook()
 void FloodPlainOrder()
 {
 	begin:
-	SET_SEL_CHOICE_KEYBIND(14, 2);
+	SET_SEL_CHOICE_KEYBIND(6, 2);
 	int plain = ADV_SEL( FloodPlain_Text, FloodPlain, 0 );
 	switch (plain)
 	{
@@ -249,7 +249,7 @@ void call_velvet_room()
                 MSG( MSG_0320_RETURN_HOME2 );
             }
 
-            SET_SEL_CHOICE_KEYBIND( 14, 1 );
+            SET_SEL_CHOICE_KEYBIND( 6, 1 );
             var8 = SEL( SEL_GO_SEA );
             CLOSE_MSG_WIN();
             

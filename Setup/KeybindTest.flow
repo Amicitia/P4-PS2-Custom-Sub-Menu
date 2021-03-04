@@ -1,0 +1,33 @@
+import("KeybindTest.msg");
+
+void KeybindTest()
+{
+		bool done = false;
+		while(!done)
+		{
+			SET_MSG_VAR(8, 619 + BIT_CHK(6334), 6);
+			SET_SEL_CHOICE_KEYBIND( 1, 1 );
+			SET_SEL_CHOICE_KEYBIND( 2, 2 );
+			SET_SEL_CHOICE_KEYBIND( 3, 3 );
+			SET_SEL_CHOICE_KEYBIND( 4, 4 );
+			SET_SEL_CHOICE_KEYBIND( 5, 5 );
+			SET_SEL_CHOICE_KEYBIND( 6, 6 );
+			SET_SEL_CHOICE_KEYBIND( 7, 7 );
+			SET_SEL_CHOICE_KEYBIND( 8, 8 );
+			SET_SEL_CHOICE_KEYBIND( 9, 9 );
+			SET_SEL_CHOICE_KEYBIND( 10, 10 );
+			SET_SEL_CHOICE_KEYBIND( 11, 11 );
+			SET_SEL_CHOICE_KEYBIND( 12, 12 );
+			SET_SEL_CHOICE_KEYBIND( 13, 13 );
+			SET_SEL_CHOICE_KEYBIND( 14, 14 );
+			SET_SEL_CHOICE_KEYBIND( 15, 15 );
+			SET_SEL_CHOICE_KEYBIND( 16, 16 );
+			SET_SEL_CHOICE_KEYBIND( 17, 17 );
+			SET_SEL_CHOICE_KEYBIND( 18, 18);
+			int selection = ADV_SEL(KeybindTitle, KeybindOptions, 0);
+			
+			OPEN_MSG_WIN();
+			MSG(KeyBind0 + selection);
+			CLOSE_MSG_WIN();
+	}
+}

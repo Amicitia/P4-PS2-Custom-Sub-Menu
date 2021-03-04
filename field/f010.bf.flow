@@ -60,7 +60,7 @@ void call_velvet_room()
                 MSG( MSG_0320_RETURN_HOME2 );
             }
 
-            SET_SEL_CHOICE_KEYBIND( 14, 1 );
+            SET_SEL_CHOICE_KEYBIND( 6, 1 );
             var8 = SEL( YESNO_SEL );
             CLOSE_MSG_WIN();
             

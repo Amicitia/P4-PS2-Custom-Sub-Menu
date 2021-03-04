@@ -27,7 +27,7 @@ void use_gohom()
 	{
 		MSG(ConfirmGohomTeddie);
 	}
-	SET_SEL_CHOICE_KEYBIND( 14, 1 );
+	SET_SEL_CHOICE_KEYBIND( 6, 1 );
 	int confirm = SEL(YesNo);
 	CLOSE_MSG_WIN();
 	
