@@ -504,7 +504,7 @@ int LevelUpSL()
 	if (oddity == -1)
 		return 1;
 	SL_LVLUP_VISUAL(major, minor, oddity);
-	EVT_FUNCTION_003D();
+	//EVT_FUNCTION_003D();
 	return 1;
 }
 
@@ -591,7 +591,8 @@ void RefillHPSP()
 
 int PartyChoice()
 {
-	GetOriginalParty();
+/*
+	//GetOriginalParty();
 	int option = 0;
 	while (option != 2)
 	{
@@ -641,7 +642,7 @@ int PartyChoice()
 		if (numMembers == 0)
 			optionMask = optionMask + 2;
 		SET_SEL_CHOICE_KEYBIND( 14, 2 );
-		option = ADV_SEL(OptionMsg, OptionSel, optionMask);
+		//option = ADV_SEL(OptionMsg, OptionSel, optionMask);
 		
 		if (option == 0)
 		{
@@ -685,7 +686,7 @@ int PartyChoice()
 			CLOSE_MSG_WIN();
 			if (confirm == 0)
 			{
-				dng_set_npc();
+				//dng_set_npc();
 				FADE( 1, 10 );
 				FADE_SYNC();
 				
@@ -713,7 +714,7 @@ int PartyChoice()
 			}
 		}
 	}
-
+*/
 	return -1;
 }
 
@@ -721,6 +722,7 @@ int ModChooseMember(int text, int mask)
 {
 	SET_SEL_CHOICE_KEYBIND( 14, 6 );
 	int member;
+	/*
 	int selection = ADV_SEL(text, PartySel, mask);
 	switch (selection)
 	{
@@ -745,6 +747,6 @@ int ModChooseMember(int text, int mask)
 		case 6:
 			member = -1;
 			break;
-	}
+	}*/
 	return member;
 }

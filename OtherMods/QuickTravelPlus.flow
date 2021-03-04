@@ -70,17 +70,17 @@ void field_order_hook()
 	// Okina
 	else if ( GET_FIELD_MAJOR() == 11 )
 	{
-		station_order();
+		//station_order();
 	}
 	// Closed school
 	else if ( GET_FIELD_MAJOR() == 17 )
 	{
-		schoolroad_order();
+		//schoolroad_order();
 	}
 	// Snow mountain
 	else if ( GET_FIELD_MAJOR() == 18 )
 	{
-		snowmt_order();
+		//snowmt_order();
 	}
 }
 
@@ -175,7 +175,7 @@ void StreetOrder(bool calendar, bool friend, bool save)
 			if ( DATE_CHK( 4, 11 ) == 1 )
 			{
 				OPEN_MSG_WIN();
-				MSG( TEST_STOP_0411 );
+				//MSG( TEST_STOP_0411 );
 				CLOSE_MSG_WIN();
 			}
 			else if ( GET_MONTH() == 4 && GET_DAY_OF_MONTH() == 17 )
@@ -202,7 +202,7 @@ void StreetOrder(bool calendar, bool friend, bool save)
 			}
 			break;
 		case 3:
-			OPEN_CALENDAR();
+			//OPEN_CALENDAR();
 			break;
 		case 4:
 			generate_hangout_menu();
@@ -329,7 +329,7 @@ void SchoolOrder(bool calendar, bool friend, bool save)
 			TOWN_MAP( 0 );
 			break;
 		case 6:
-			OPEN_CALENDAR();
+			//OPEN_CALENDAR();
 			break;
 		case 7:
 			generate_hangout_menu();
@@ -444,7 +444,7 @@ void NightOrder(bool calendar, bool friend, bool save)
 						BIT_OFF( 0 + 0x0400 + 847 );
 					}
 					BIT_ON( 0 + 0x0400 + 1067 );
-					SHIROKU_PUB();
+					//SHIROKU_PUB();
 					if ( BIT_CHK( 0 + 0x0400 + 1057 ) == 1 )
 					{
 						commu_yoru();
@@ -474,7 +474,7 @@ void NightOrder(bool calendar, bool friend, bool save)
 				CALL_FIELD( 7, 1, 0, 0 );
 			break;
 		case 4:
-			OPEN_CALENDAR();
+			//OPEN_CALENDAR();
 			break;
 		case 5:
 			generate_hangout_menu();
@@ -568,7 +568,7 @@ void call_velvet_room()
                 else 
                 {
                     MSG( MSG_0320_GO_HOME_COMU_NO2 );
-                    gojitudan_guide();
+                    //gojitudan_guide();
                 }
 
             }

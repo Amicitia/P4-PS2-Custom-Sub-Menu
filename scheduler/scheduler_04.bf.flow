@@ -25,7 +25,7 @@ void sdl04_10_PM_D_hook()
 	else
 	{
 		SHOW_DATE( 0 );
-		FUNCTION_0097();
+		//FUNCTION_0097();
 		STOP_BGM( 0 );
 		PLAY_CUTSCENE( 1 );
 		FUNCTION_0065();

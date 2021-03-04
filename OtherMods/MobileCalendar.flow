@@ -74,7 +74,7 @@ void school_order_hook()
 		}
 		else if ( var56 == 5 )
 		{
-			OPEN_CALENDAR();
+			//OPEN_CALENDAR();
 		}
 		else if ( var56 == 6 )
 		{
@@ -199,7 +199,7 @@ void myhouse_order_hook()
         return;
     }
 	else if (var60 == 8)
-		OPEN_CALENDAR();
+		//OPEN_CALENDAR();
 	else if (var60 == 9)
 		generate_hangout_menu();
 	else if (var60 == 10)
@@ -279,7 +279,7 @@ void street_order_hook()
             call_go2home();
         }
 		else if ( var64 == 6 )
-			OPEN_CALENDAR();
+			//OPEN_CALENDAR();
 		else if ( var64 == 7 )
 			generate_hangout_menu();
 		else if ( var64 == 8 )
@@ -394,7 +394,7 @@ void street_order_hook()
                 return;
             }
 			else if ( var64 == 4 )
-				OPEN_CALENDAR();
+				//OPEN_CALENDAR();
 			else if ( var64 == 5 )
 				generate_hangout_menu();
 			else if ( var64 == 6 )
@@ -467,7 +467,7 @@ void night_place_order_exit_hook()
 	else if ( var138 == 6 )
     {
 		CLOSE_MSG_WIN();
-        OPEN_CALENDAR();
+        //OPEN_CALENDAR();
     }
 	else if ( var138 == 7 )
 	{
@@ -584,7 +584,7 @@ void gms_order_hook()
 		return;
 	}
 	else if (var68 == 2)
-		OPEN_CALENDAR();
+		//OPEN_CALENDAR();
 	else if (var68 == 3)
 		generate_hangout_menu();
 	else if (var68 == 4)
@@ -641,7 +641,7 @@ void embank_order_hook()
 		}
 		else if ( var72 == 3 )
 		{
-			OPEN_CALENDAR();
+			//OPEN_CALENDAR();
 		}
 		else if (var72 == 4)
 			generate_hangout_menu();
@@ -710,7 +710,7 @@ void embank_order_hook()
 				return;
 			}
 			else if (var72 == 3)
-				OPEN_CALENDAR();
+				//OPEN_CALENDAR();
 			else if (var72 == 4)
 				generate_hangout_menu();
 			else if (var72 == 5)
@@ -796,7 +796,7 @@ void station_order_hook()
 
         }
 		else if ( var76 == 1)
-			OPEN_CALENDAR();
+			//OPEN_CALENDAR();
 		else if (var76 == 2)
 			generate_hangout_menu();
 		else if (var76 == 3)
@@ -844,7 +844,7 @@ void schoolroad_order_hook()
 		return;
 	}
 	else if ( var80 == 1 )
-		OPEN_CALENDAR();
+		//OPEN_CALENDAR();
 	else if (var80 == 2)
 		generate_hangout_menu();
 	else if (var80 == 3)
@@ -897,7 +897,7 @@ void snowmt_order_hook()
 			return;
 		}
 		else if ( var84 == 2 )
-			OPEN_CALENDAR();
+			//OPEN_CALENDAR();
 		else if ( var84 == 3 )
 			generate_hangout_menu();
 		else if (var84 == 4)

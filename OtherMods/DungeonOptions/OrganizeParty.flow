@@ -9,7 +9,7 @@ int currentThird;
 
 void OrganizeParty()
 {
-	GetOriginalParty();
+	//GetOriginalParty();
 	int floor = GET_FLOOR_ID();
 	int option = 0;
 	while (option != 2)
@@ -199,7 +199,7 @@ void OrganizeParty()
 			int confirm = SEL(YesNo);
 			if (confirm == 0)
 			{
-				dng_set_npc();
+				//dng_set_npc();
 				FADE( 1, 10 );
 				FADE_SYNC();
 				

@@ -9,7 +9,7 @@
 // Imports
 // 
 
-import( "../build/input/field/pack/fd007_001/f007.bf" );
+import( "../build/input/field/pack/f007_001/f007.bf" );
 import( "f007.bf.msg" );
 
 // 
@@ -25,26 +25,26 @@ void call_lmap_hook()
 		if (!BIT_CHK(6322))
 		{
 			OPEN_MSG_WIN();
-			MSG( MSG_HOME_EXIT_NIGHT );
+			//MSG( MSG_HOME_EXIT_NIGHT );
 			SET_SEL_CHOICE_KEYBIND( 14, 3 );
-			var12 = SEL( SEL_HOME_EXIT_NIGHT );
+			//var12 = SEL( SEL_HOME_EXIT_NIGHT );
 			CLOSE_MSG_WIN();
 			
 			if ( var12 == 0 )
 			{
-				call_go2street();
+				//call_go2street();
 			}
 			else if ( var12 == 1 )
 			{
-				call_go2shrine();
+				//call_go2shrine();
 			}
 			else if ( var12 == 2 )
 			{
-				call_go2beach();
+				//call_go2beach();
 			}
 		}
-		else
-			NightOrder();
+		/*else
+			NightOrder();*/
         return;
     }
     else 
@@ -67,6 +67,7 @@ void call_lmap_hook()
 
 }
 
+/*
 void NightOrder()
 {
 	OPEN_MSG_WIN();
@@ -100,7 +101,7 @@ void NightOrder()
 					break;
 				case 2:
 					CLOSE_MSG_WIN();
-					SHIROKU_PUB();
+					//SHIROKU_PUB();
 					CALL_FIELD(8, 2, 3, 0);
 					break;
 				case 3:
@@ -125,6 +126,7 @@ void NightOrder()
 	}
 	CLOSE_MSG_WIN();
 }
+*/
 
 void call_velvet_room()
 {
@@ -202,7 +204,7 @@ void call_velvet_room()
                 else 
                 {
                     MSG( MSG_0320_GO_HOME_COMU_NO2 );
-                    gojitudan_guide();
+                    //gojitudan_guide();
                 }
 
             }
@@ -389,7 +391,7 @@ void call_velvet_room()
 }
 
 
-void gojitudan_guide()
+/*void gojitudan_guide()
 {
     
     if ( BIT_CHK( 0 + 0x0400 + 55 ) == 1 && BIT_CHK( 0 + 0x0400 + 1290 ) == 1 || BIT_CHK( 0 + 0x0400 + 55 ) == 0 || BIT_CHK( 0 + 0x0400 + 38 ) == 1 && BIT_CHK( 0 + 0x0400 + 34 ) == 1 || BIT_CHK( 0 + 0x0400 + 35 ) == 1 && BIT_CHK( 0 + 0x0400 + 1294 ) == 1 || BIT_CHK( 0 + 0x0400 + 34 ) == 0 && BIT_CHK( 0 + 0x0400 + 35 ) == 0 && BIT_CHK( 0 + 0x0400 + 42 ) == 1 || BIT_CHK( 0 + 0x0400 + 43 ) == 1 && BIT_CHK( 0 + 0x0400 + 1293 ) == 1 || BIT_CHK( 0 + 0x0400 + 42 ) == 0 && BIT_CHK( 0 + 0x0400 + 43 ) == 0 && BIT_CHK( 0 + 0x0400 + 41 ) == 1 && BIT_CHK( 0 + 0x0400 + 1303 ) == 1 || BIT_CHK( 0 + 0x0400 + 41 ) == 0 && BIT_CHK( 0 + 0x0400 + 49 ) == 1 && BIT_CHK( 0 + 0x0400 + 1295 ) == 1 || BIT_CHK( 0 + 0x0400 + 49 ) == 0 && BIT_CHK( 0 + 0x0400 + 51 ) == 1 && BIT_CHK( 0 + 0x0400 + 1304 ) == 1 || BIT_CHK( 0 + 0x0400 + 51 ) == 0 && BIT_CHK( 0 + 0x0400 + 54 ) == 1 && BIT_CHK( 0 + 0x0400 + 1296 ) == 1 || BIT_CHK( 0 + 0x0400 + 54 ) == 0 && BIT_CHK( 0 + 0x0400 + 721 ) == 1 || BIT_CHK( 0 + 0x0400 + 737 ) == 1 && BIT_CHK( 0 + 0x0400 + 1289 ) == 1 && BIT_CHK( 0 + 0x0400 + 0x0800 + 0x0400 + 0x0200 + 0x0200 + 0x0200 + 58 ) == 0 || BIT_CHK( 0 + 0x0400 + 721 ) == 0 && BIT_CHK( 0 + 0x0400 + 737 ) == 0 || BIT_CHK( 0 + 0x0400 + 0x0800 + 0x0400 + 0x0200 + 0x0200 + 0x0200 + 58 ) == 1 )
@@ -460,4 +462,4 @@ void gojitudan_guide()
         CLOSE_MSG_WIN();
     }
 
-}
+}*/

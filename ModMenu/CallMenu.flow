@@ -184,9 +184,9 @@ int Facilities()
 		switch (facility) 
 		{
 			case 0:
-				CLD_FUNCTION_0001();
-				CLD_FUNCTION_0002();
-				CLD_FUNCTION_0003();
+				//CLD_FUNCTION_0001();
+				//CLD_FUNCTION_0002();
+				//CLD_FUNCTION_0003();
 				CALL_FIELD(20, 1, 0, 0);
 				return 0;
 			case 1:
@@ -201,7 +201,7 @@ int Facilities()
 				ReturnToPrevLoc(floor, fieldMajor, fieldMinor);
 				return 0;
 			case 4:
-				SHIROKU_PUB();
+				//SHIROKU_PUB();
 				ReturnToPrevLoc(floor, fieldMajor, fieldMinor);
 				return 0;
 			case 10:
@@ -253,14 +253,14 @@ int Facilities2()
 				ReturnToPrevLoc(floor, fieldMajor, fieldMinor);
 				return 0;
 			case 2:
-				CROCOFUR_SHOP();
+				//CROCOFUR_SHOP();
 				ReturnToPrevLoc(floor, fieldMajor, fieldMinor);
 				return 0;
 			case 3:
-				BOOK_SHOP(0);
+				//BOOK_SHOP(0);
 				return 0;
 			case 4:
-				PRODUCE_SHOP();
+				//PRODUCE_SHOP();
 				return 0;
 			case 10:
 				return -1;
@@ -454,7 +454,7 @@ int FloorSelect()
 	int major = Get_Number(3, MSG_3);
 	if (major == -1)
 		return -1;
-	dng_set_npc();
+	//dng_set_npc();
 	FADE( 1, 10 );
 	FADE_SYNC();
 	CALL_FLOOR(major);
