@@ -43,18 +43,33 @@ void MenuOptions()
 		while(!done)
 		{
 			//Set message variables for menu options
-			for (int i = 0; i < 8; i++)
+			for (int i = 0; i < 4; i++)
 			{
 				SET_MSG_VAR(i, 619 + BIT_CHK(6321 + i), 6);
 			}
-			SET_MSG_VAR(8, 619 + BIT_CHK(6334), 6);
-			SET_SEL_CHOICE_KEYBIND( 6, 18 );
-			SET_SEL_CHOICE_KEYBIND( 7, 18 );
+			SET_MSG_VAR(7, 619 + BIT_CHK(6334), 6);
+			SET_SEL_CHOICE_KEYBIND( 6, 4 );
+			SET_SEL_CHOICE_KEYBIND( 7, 4 );
 			//Toggle selection or read more about it
 			int selection = ADV_SEL(SquareMenuOptions_Text, SquareMenuOptions, 0);
-			if (selection != 18)
+			if (selection != 4)
 			{
-				ToggleOption(ModMenu_About, 6321, selection);
+				switch(selection) 
+				{
+					case 0:
+						ToggleOption(ModMenu_About, 6321);
+						break;
+					case 1:
+						ToggleOption(QuickTravelPlus_About, 6322);
+						break;
+					case 2:
+						ToggleOption(FindAFriend_About, 6325);
+						break;
+					case 3:
+						ToggleOption(SaveAnywhere_About, 6326);
+						break;
+				}
+				
 			}
 			else
 			{
@@ -70,77 +85,24 @@ void MenuOptions()
 	}
 }
 
-void ToggleOption(int startMsg, int startFlag, int selection)
+void ToggleOption(int startMsg, int startFlag)
 {
 	OPEN_MSG_WIN();
-	MSG( startMsg + selection );
+	MSG( startMsg );
 	SET_SEL_CHOICE_KEYBIND(6, 2);
 	int sel = SEL(ToggleMenu);
 	switch (sel)
 	{
 		case 0: //on
-			if (selection == 8)
-				BIT_ON(6334);
-			else
-				BIT_ON(startFlag + selection);
-			if(selection == 3)
-			{
-				CLOSE_MSG_WIN();
-				DungeonOptionsToggle();
-			}
-			else if(selection == 4)
-			{
-				MSG(SPOILER_TOGGLE);
-				sel = SEL(ToggleMenu);
-				if (sel == 0)
-					BIT_ON(5678);
-				else if (sel == 1)
-					BIT_OFF(5678);
-			}
-			break;
+				BIT_ON(startFlag);
+				break;
 		case 1: //off
-			if (selection == 8)
-				BIT_OFF(6334);
-			else
-				BIT_OFF(startFlag + selection);
-			if (selection == 3)
-			{
-				BIT_OFF(6330);
-				BIT_OFF(6331);
-				BIT_OFF(6332);
-				BIT_OFF(6333);
-			}
+				BIT_OFF(startFlag);
 			break;
 		case 2: //back
 			break;
 	}
 	CLOSE_MSG_WIN();
-}
-
-void DungeonOptionsToggle()
-{
-	//Toggle options until done
-	bool done = false;
-	while(!done)
-	{
-		//Set message variables for menu options
-		for (int i = 0; i < 4; i++)
-		{
-			SET_MSG_VAR(i, 619 + BIT_CHK(6330 + i), 6);
-		}
-		SET_SEL_CHOICE_KEYBIND( 6, 4 );
-		SET_SEL_CHOICE_KEYBIND( 7, 4 );
-		//Toggle selection or read more about it
-		int selection = ADV_SEL(DungeonOptions_Text, DungeonOptions, 0);
-		if (selection != 4)
-		{
-			ToggleOption(ShowFox_About, 6330, selection);
-		}
-		else
-		{
-			done = true;
-		}
-	}
 }
 
 bool IntroSkip() {

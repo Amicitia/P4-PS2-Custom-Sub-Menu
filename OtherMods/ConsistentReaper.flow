@@ -404,10 +404,12 @@ void dng_escape_hook()
 	}
 
     
-    if ( FLD_FUNCTION_0036() == 1 && FLD_FUNCTION_0037() == 0 )
+    /*
+	if ( FLD_FUNCTION_0036() == 1 && FLD_FUNCTION_0037() == 0 )
     {
         var18 = var18 + 1;
     }
+	*/
 
     
     if ( var17 >= 5 && var17 < 20 )

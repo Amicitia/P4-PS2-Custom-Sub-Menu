@@ -1,18 +1,13 @@
-import( "../build/input/init_free/field/script/field.bf" );
+import( "../build/input/field/script/field.bf" );
 import( "../ModMenu/ModMenu.flow" );
 import( "../Setup/FirstTimeSetup.flow" );
-
-int sVar9;
-int sVar8;
-int svar7;
 	
 //EXTENSIONS
 import ( "../OtherMods/FindAFriend.flow" ); //Fast travel to social link locations
 import ( "../OtherMods/QuickTravelPlus.flow" ); //Extended quickTravel locations for town/school
-import ( "../OtherMods/VRGameOverSkip.flow" ); //Skips velvet room scene after game over
+//import ( "../OtherMods/VRGameOverSkip.flow" ); //Skips velvet room scene after game over
 //import ( "../OtherMods/DungeonOptions/DungeonOptions.flow" ); //Various QoL Dungeon Options
-import ( "../OtherMods/ConsistentReaperField.flow" ); //Hooks field functions for consistent reaper 
-//import ( "../OtherMods/MobileCalendar.flow" );
+//import ( "../OtherMods/ConsistentReaperField.flow" ); //Hooks field functions for consistent reaper 
 
 // Turn off all old conflicting flags
 void TurnOffAllOptions()

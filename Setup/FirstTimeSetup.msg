@@ -19,13 +19,8 @@
 [sel SquareMenuOptions]
 [f 0 5 -258][f 2 1]Mod Menu: [f 2 4 0][e]
 [f 0 5 -258][f 2 1]Quick Travel Plus: [f 2 4 1][e]
-[f 0 5 -258][f 2 1]Mobile Calendar: [f 2 4 2][e]
-[f 0 5 -258][f 2 1]Dungeon Options: [f 2 4 3][e]
-[f 0 5 -258][f 2 1]Find A Friend (Beta): [f 2 4 4][e]
-[f 0 5 -258][f 2 1]Save Anywhere: [f 2 4 5][e]
-[f 0 5 -258][f 2 1]Game Over Skip: [f 2 4 6][e]
-[f 0 5 -258][f 2 1]Reap-Balanced Encounters: [f 2 4 7][e]
-[f 0 5 -258][f 2 1]Default Direct Commands: [f 2 4 8][e]
+[f 0 5 -258][f 2 1]Find A Friend (Beta): [f 2 4 2][e]
+[f 0 5 -258][f 2 1]Save Anywhere: [f 2 4 3][e]
 
 [msg OptionsWarning]
 [f 0 5 -258][f 2 1]Access the Options Menu again by pressing
@@ -42,16 +37,6 @@
 [n]the building. Also extends options in the entire town
 [n]of Inaba.[e]
 
-[msg MobileCalendar_About[Mobile Calendar (ShrineFox)]]
-[f 0 5 -258][f 2 1]Allows you to view the calendar from anywhere
-[n]via the Square Menu. It's highly recommended to
-[n]use this with rudiger_gb's Useful Calendar mod.[e]
-
-[msg DungeonOptions_About[Dungeon Options (Tekka)]]
-[f 0 5 -258][f 2 1]Add/remove party members without leaving the dungeon.
-[n]Use your Goho-Ms straight from the square menu.
-[n]Fast travel to any dungeon floor after its deadline.[e]
-
 [msg FindAFriend_About[FindAFriend (AnimatedSwine37)]]
 [f 0 5 -258][f 2 1]Instantly travel to the location of any available
 [n]Social Links on a given day. This saves you from
@@ -61,20 +46,6 @@
 [f 0 5 -258][f 2 1]Save your game from any field, straight from
 [n]the square menu. Normally, you would have to save at
 [n]designated areas marked by blue butterflies.[e]
-
-[msg GameOverskip_About[Game Over Skip (Tekka)]]
-[f 0 5 -258][f 2 1]Skip the Velvet Room scene after losing a battle.
-[n]Instantly decide whether or not to retry.[e]
-
-[msg ConsistentReaper_About[Reap-Balanced Encounters (Tekka)]]
-[f 0 5 -258][f 2 1]Guarantees a Reaper encounter after every 22 chests
-[n]you open while dungeon crawling. Normally, there's
-[n]only a small chance of an encounter.[e]
-
-[msg DirectCommands_About[Default Direct Commands (Tekka)]]
-[f 0 5 -258][f 2 1]Automatically sets party member tactics to Direct
-[n]Commands so you don't have to take the couple
-[n]seconds to change it yourself.[e]
 
 [msg DungeonOptions_Text]
 [f 0 5 -258][f 2 1]Dungeon Options[e]
@@ -112,11 +83,11 @@
 
 [msg IntroSkipConfig]
 [f 0 5 -258][f 2 1][f 0 1 1]Intro Skip Setup[n]
-[f 0 1 0]The opening events of Persona 4 Golden
+[f 0 1 0]The opening events of Persona 4
 [n]are notoriously long, spanning about 1 to 3
 [n]hours before real gameplay begins.[f 1 1][e]
 
 [msg IntroSkipSelection[Intro Skip (ShrineFox)]]
 [f 0 5 -258][f 2 1]Would you like to skip the story exposition
 [n]and start from April 20? This is recommended if
-[n]you have experienced Persona 4 Golden before.[f 1 1][e]
+[n]you have experienced Persona 4 before.[f 1 1][e]

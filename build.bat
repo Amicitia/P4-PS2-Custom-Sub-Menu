@@ -18,7 +18,7 @@ if not exist %OUTPUT_PATH%\DATA\SCHEDULER mkdir %OUTPUT_PATH%\DATA\SCHEDULER
 %PAKPACK% unpack "%INPUT_PATH%\FIELD\PACK\F020_001.P00"
 %PAKPACK% unpack "%INPUT_PATH%\FIELD\PACK\F023_001.P00"
 
-%COMPILER% .\init_free\field.bf.flow -Compile -OutFormat V1 -Library P4 -Encoding P4 -Out "%OUTPUT_PATH%\DATA\FIELD\SCRIPT\FIELD.BF" -Hook
+%COMPILER% .\field\field.bf.flow -Compile -OutFormat V1 -Library P4 -Encoding P4 -Out "%OUTPUT_PATH%\DATA\FIELD\SCRIPT\FIELD.BF" -Hook
 %COMPILER% .\field\dungeon.bf.flow -Compile -OutFormat V1 -Library P4 -Encoding P4 -Out "%OUTPUT_PATH%\DATA\FIELD\SCRIPT\DUNGEON.BF" -Hook
 %COMPILER% .\field\dungeon01.bf.flow -Compile -OutFormat V1 -Library P4 -Encoding P4 -Out "%OUTPUT_PATH%\DATA\FIELD\SCRIPT\DUNGEON01.BF" -Hook
 %COMPILER% .\field\lmap.bf.flow -Compile -OutFormat V1 -Library P4 -Encoding P4 -Out "%OUTPUT_PATH%\DATA\FIELD\SCRIPT\LMAP.BF" -Hook

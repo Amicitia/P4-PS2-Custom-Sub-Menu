@@ -19,6 +19,16 @@ import( "Fox.flow" );
 // 
 
 int stratMask;
+int sVar0;
+int sVar1;
+int sVar2;
+int sVar3;
+int sVar4;
+int sVar5;
+int sVar6;
+int sVar7;
+int sVar8;
+int sVar9;
 
 // Menu hooks
 void entrance_jump_hook()
@@ -136,15 +146,15 @@ void helper_order_hook()
                 {
                     CLOSE_MSG_WIN();
                 }
-                COStalk_SYSSET();
+                //COStalk_SYSSET();
                 
                 if ( GET_CNT( 249 ) >= 5 )
                 {
                     CLOSE_MSG_WIN();
                 }
 
-                FLD_FUNCTION_0047( var33 + 3, sVar7, sVar8, sVar9 );
-                FLD_FUNCTION_0048();
+                //FLD_FUNCTION_0047( var33 + 3, sVar7, sVar8, sVar9 );
+                //FLD_FUNCTION_0048();
             }
 
             
@@ -175,7 +185,7 @@ void helper_order_hook()
             CLOSE_MSG_WIN();
             NAVI_BU_CLOSE( sVar7 );
             BIT_ON( 0 + 0x0400 + 0x0800 + 95 );
-            goto_stair();
+            //goto_stair();
             return;
         }
         else if ( var33 == 6 || var33 == 7 )
@@ -183,7 +193,7 @@ void helper_order_hook()
             CLOSE_MSG_WIN();
             NAVI_BU_CLOSE( sVar7 );
             BIT_ON( 0 + 0x0400 + 0x0800 + 95 );
-            backto_stair();
+            //backto_stair();
             return;
         }
 		// Select dungeon floor
@@ -259,15 +269,15 @@ void StrategizeMenu()
 			{
 				CLOSE_MSG_WIN();
 			}
-			COStalk_SYSSET();
+			//COStalk_SYSSET();
 			
 			if ( GET_CNT( 249 ) >= 5 )
 			{
 				CLOSE_MSG_WIN();
 			}
 
-			FLD_FUNCTION_0047( selection + 4, sVar7, sVar8, sVar9 );
-			FLD_FUNCTION_0048();
+			//FLD_FUNCTION_0047( selection + 4, sVar7, sVar8, sVar9 );
+			//FLD_FUNCTION_0048();
 		}
 
 		
@@ -416,16 +426,16 @@ void init_sel_mask_hook()
     }
 
     // Hide Go to next floor if floor select is shown
-    if ( FLD_FUNCTION_0036() == 0 || showFloorSelect == true)
+    /*if ( FLD_FUNCTION_0036() == 0 || showFloorSelect == true)
     {
         sVar1 = sVar1 + 32;
-    }
+    }*/
 
 	// Mask return to previous floor and entrance
     sVar1 = sVar1 + 192;
     
 	// Keep Return to previous floor/entrance hidden if floor select is shown
-    if ( FLD_FUNCTION_0037() == 1 && showFloorSelect == false)
+    /*if ( FLD_FUNCTION_0037() == 1 && showFloorSelect == false)
     {
         // Unmask entrance
         if ( var34 == 6 || var34 == 21 || var34 == 41 || var34 == 61 || var34 == 81 || var34 == 101 || var34 == 121 || var34 == 123 || var34 == 141 || var34 == 161 )
@@ -438,7 +448,7 @@ void init_sel_mask_hook()
             sVar1 = sVar1 - 64;
         }
 
-    }
+    }*/
 	
 	// Hide floor select
 	if (!showFloorSelect || !BIT_CHK(6324))
