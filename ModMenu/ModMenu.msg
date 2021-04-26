@@ -12,7 +12,7 @@
 [f 0 5 -258][f 2 1]Options[e]
 
 [msg Mod_Menu_Text]
-[f 0 5 -258][f 2 1]P4G Mod Menu[n][f 1 1][e]
+[f 0 5 -258][f 2 1]P4 Mod Menu[n][f 1 1][e]
 
 [sel Mod_Menu]
 [f 0 5 -258][f 2 1]Call Menu[e]
